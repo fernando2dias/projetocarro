@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <title>Fernando Concessionária Volkswagen</title>
+</head>
+<body>
+<header>
+    <div class="brand"><img src="images/logo.png" alt="Volkswagen"><h1>Fernando a sua <br>Concessionária Volkswagen</h1></div>
+</header>
+
+<article>
+    <h2>Conheça o novo <span th:text="${carro.modelo}"></span></h2>
+
+    <div class="row" style="padding: 0; margin: 0;">
+        <div class="col-md-12" style="padding: 0; margin: 0;">
+            <div class="row" style="padding: 0; margin: 0;">
+            <div class="col-md-5" style="padding: 0; margin: 0;"><img th:src="${carro.foto}" class="img-fluid"></div>
+            <div class="col-md-5" style="padding: 25px;">
+                <a href="/" target="_self" class="btn btn-primary">Voltar</a>
+                <p><h3 th:text="${carro.modelo}"></h3></p>
+                <p>Ano: <span th:text="${carro.ano}"></span></p>
+                <p>Valor: <span th:text="${carro.valor}"></span></p>
+                <p>Descrição: <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dignissim enim, dignissim placerat eros. Nullam mi sapien, vehicula id lorem eget, posuere tempus sem. Suspendisse potenti. Sed sodales quam facilisis fermentum euismod. Aenean varius sem a aliquam porta. Ut ultricies, felis nec sagittis molestie, tortor metus sagittis nibh, nec blandit dui felis in metus. In urna ex, luctus nec ligula non, pellentesque eleifend urna. Fusce et massa vel tellus blandit ornare eu in ligula.<br> 
+
+                </span></p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</article>
+
+    
+</body>
+
+<script src="js/bootstrap.js"></script>
+</html>

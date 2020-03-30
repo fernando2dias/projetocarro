@@ -1,0 +1,24 @@
+header{
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    height: 290px;
+}
+
+.brand{
+    padding: 50px;
+    color: #ffffff;
+    display: flex;
+}
+
+h1{
+    margin-left: 50px;
+    text-shadow: #000 4px 4px 5px;
+}
+
+h2{
+    font-size: 2rem;
+    color: #fff;
+    background: #470065;
+    padding: 20px;
+    margin: 0;
+}
